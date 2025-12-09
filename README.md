@@ -1,8 +1,8 @@
-🖧 Real-Time Network Traffic Analyzer
+# 🖧 Real-Time Network Traffic Analyzer
 
 An advanced Python-based network traffic monitoring tool for Windows, capturing, analyzing, and visualizing live network traffic. Implements packet capture using Scapy with support for TCP, UDP, ICMP, ARP, and custom BPF filters, detailed packet analysis, color-coded CLI output using Colorama, a live GUI dashboard using Tkinter and Matplotlib, CSV logging, and visualizations of protocol distribution and top source IPs. Ideal for network monitoring, cybersecurity analysis, and portfolio demonstration.
 
-Features
+## Features
 
 Capture packets with configurable filters (TCP, UDP, ICMP, ARP, or custom BPF)
 
@@ -24,21 +24,21 @@ GUI Quit button for safe exit without force-closing the window
 
 Modular, structured, and well-commented code—excellent for learning and portfolio use
 
-Installation
+## Installation
 
-Clone the repository:
+### Clone the repository:
 git clone https://github.com/Shreyas993/real-time-network-traffic-analyzer.git
 cd real_time_network_traffic_analyzer
 
-Create and activate a virtual environment (Windows PowerShell):
+### Create and activate a virtual environment (Windows PowerShell):
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 
-Install dependencies:
+## Install dependencies:
 pip install -r requirements.txt
 Dependencies include: scapy, matplotlib, colorama (Tkinter is built-in on Windows).
 
-Usage
+## Usage
 
 Run the tool:
 python main.py
@@ -69,7 +69,7 @@ Packet CSV logs → logs/
 
 Protocol and IP charts → visuals/
 
-Example Output
+## Example Output
 
 === Real-Time Network Traffic Analyzer ===
 Total packets captured: 20
@@ -81,7 +81,7 @@ Packet analysis complete.
 [+] Protocol distribution chart saved: visuals/protocol_distribution.png
 [+] Top source IPs chart saved: visuals/top_source_ips.png
 
-Folder Structure
+## Folder Structure
 real_time_network_traffic_analyzer/
 ├─ capture/                # Packet capture modules (sniffer.py)
 ├─ analysis/               # Packet analysis modules (parser.py)
@@ -94,7 +94,7 @@ real_time_network_traffic_analyzer/
 ├─ main.py                 # Main executable script
 └─ README.md               # Project documentation
 
-Technical Details
+## Technical Details
 
 Packet Capture: Scapy (supports TCP, UDP, ICMP, ARP, and custom BPF filters)
 
@@ -116,7 +116,7 @@ Search/filter panel for protocols or IPs
 
 Cross-platform compatibility (Windows + Linux)
 
-References
+## References
 
 Scapy Documentation — https://scapy.readthedocs.io/
 
@@ -124,7 +124,7 @@ Matplotlib Documentation — https://matplotlib.org/stable/contents.html
 
 Tkinter Documentation — https://docs.python.org/3/library/tkinter.html
 
-Author
+## Author
 
 Shreyas Ramkumar — Master’s student in Cybersecurity at RMIT University
 GitHub: https://github.com/Shreyas993
